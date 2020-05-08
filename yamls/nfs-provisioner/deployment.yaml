@@ -25,11 +25,11 @@ spec:
             - name: PROVISIONER_NAME
               value: wizen.com/nfs
             - name: NFS_SERVER
-              value: 192.168.137.2
+              value: 192.168.137.4
             - name: NFS_PATH
               value: /srv/nfs/kubedata
       volumes:
         - name: nfs-client-root
           nfs:
-            server: 192.168.137.2
+            server: 192.168.137.4
             path: /srv/nfs/kubedata
